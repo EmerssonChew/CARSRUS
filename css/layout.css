@@ -1,0 +1,30 @@
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*Bootstrap - Same height grids*/
+.row.is-flex {
+  display: flex;
+  flex-wrap: wrap;
+  /*background-color: #f1f1f1;*/
+}
+.row.is-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.is-flex .box {
+  background: none;
+  position: static;
+
+}
+
+/*Bootstrap - Image size follows grid size*/
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
