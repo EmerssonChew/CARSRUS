@@ -16,6 +16,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Scripts -->
+  <script>
+  $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();
+  });
+  </script>
 </head>
 
 <body>
@@ -31,35 +37,35 @@
         <span class="icon-bar"></span>
         </button>
         <!-- Branding Image -->
-        <a class="navbar-brand" href="/">
-        <span>
-          <img src="images/layout/logo-white-20px.png" alt="CARSRUS"> CARSRUS
-        </span>
-      </a>
+        <a class="navbar-brand" href="index.html">
+          <span>
+            <img src="images/layout/logo-white-20px.png" alt="CARSRUS">
+            CARSRUS
+          </span>
+        </a>
       </div>
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
           <li><a href="#">Browse</a></li>
           <li><a href="#">Sell</a></li>
-
           <!-- Search Bar -->
-          <li class="navbar-form navbar-left">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search">
-              <div class="input-group-btn">
-                <button class="btn btn-default" type="submit">
-                <i class="glyphicon glyphicon-search"></i>
-              </button>
+          <li>
+            <form class="navbar-form navbar-left">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                    <i class="glyphicon glyphicon-search"></i>
+                  </button>
+                </div>
               </div>
-            </div>
+            </form>
           </li>
-
         </ul>
         <!-- Sign up and Login Buttons -->
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">Account</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li><a href="pages/sign-up-login.html">Sign Up / Login</a></li>
         </ul>
       </div>
     </div>
@@ -71,15 +77,15 @@
     <p><h3>Featured</h3></p>
     <div class="row is-flex">
       <!-- Aston Martin V8 Vantage Coupe 2015 -->
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-1" style="background-color:lavenderblush;">
+      <a class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" style="background-color:lavenderblush;" href="pages/product.html">
         <div class="box">
           <img src="images\listings\Aston Martin V8 Vantage Coupe 2015\1.png" alt="Aston Martin V8 Vantage Coupe 2015">
-          Aston Martin V8 Vantage Coupe 2015
+           Aston Martin V8 Vantage Coupe 2015
           <p><b>$159,990</b></p>
         </div>
-      </div>
+      </a>
       <!-- Nissan Primera 2001 -->
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-1" style="background-color:lavender;">
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" style="background-color:lavender;">
         <div class="box">
           <img src="images\listings\Nissan Primera 2001\1.png" alt="Nissan Primera 2001">
           Nissan Primera 2001
@@ -87,7 +93,7 @@
         </div>
       </div>
       <!-- Toyota Vellfire 2017 -->
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-1" style="background-color:lavenderblush;">
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" style="background-color:lavenderblush;">
         <div class="box">
           <img src="images\listings\Toyota Vellfire 2017\1.png" alt="Toyota Vellfire 2017">
           Toyota Vellfire 2017
@@ -95,7 +101,7 @@
         </div>
       </div>
       <!-- Hyundai i20 PB 1.4 GL A4 Active 2013 -->
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-1" style="background-color:lavender;">
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" style="background-color:lavender;">
         <div class="box">
           <img src="images\listings\Hyundai i20 PB 1.4 GL A4 Active 2013\1.png" alt="Hyundai i20 PB 1.4 GL A4 Active 2013">
           Hyundai i20 PB 1.4 GL A4 Active 2013
@@ -103,7 +109,7 @@
         </div>
       </div>
       <!-- Toyota Vanguard 2.4 AWD 2007 -->
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-1" style="background-color:lavenderblush;">
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" style="background-color:lavenderblush;">
         <div class="box">
           <img src="images\listings\Toyota Vanguard 2.4 AWD 2007\1.png" alt="Toyota Vanguard 2.4 AWD 2007">
           Toyota Vanguard 2.4 AWD 2007
@@ -111,7 +117,7 @@
         </div>
       </div>
       <!-- Mitsubishi Chariot Grandis 2004 -->
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-1" style="background-color:lavender;">
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" style="background-color:lavender;">
         <div class="box">
           <img src="images\listings\Mitsubishi Chariot Grandis 2004\1.png" alt="Mitsubishi Chariot Grandis 2004">
           Mitsubishi Chariot Grandis 2004
@@ -119,7 +125,7 @@
         </div>
       </div>
       <!-- Nissan Wingroad 2006 2015 -->
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-1" style="background-color:lavenderblush;">
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" style="background-color:lavenderblush;">
         <div class="box">
           <img src="images\listings\Nissan Wingroad 2006\1.png" alt="Nissan Wingroad 2006">
           Nissan Wingroad 2006
@@ -127,7 +133,7 @@
         </div>
       </div>
     <!-- See more Listings -->
-    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-1" style="background-color:lavender;">
+    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2" id="see-more-listings-grid-box" style="background-color:lavender;">
       <div class="box">
         See more listings
       </div>
@@ -137,7 +143,7 @@
     <p><h3>Recommended for you</h3></p>
     <!-- BMW X1 S Drive 18i 2010 -->
     <div class="row is-flex">
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-1" style="background-color:lavenderblush;">
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2" style="background-color:lavenderblush;">
         <div class="box">
           <img src="images\listings\BMW X1 S Drive 18i 2010\1.png" alt="BMW X1 S Drive 18i 2010">
           BMW X1 S Drive 18i 2010
@@ -145,7 +151,7 @@
         </div>
       </div>
       <!-- Toyota Estima 2006 -->
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-1" style="background-color:lavender;">
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2" style="background-color:lavender;">
         <div class="box">
           <img src="images\listings\Toyota Estima 2006\1.png" alt="Toyota Estima 2006">
           Toyota Estima 2006
@@ -153,7 +159,7 @@
         </div>
       </div>
       <!-- Ford Focus TITANIUM 2016 -->
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-1" style="background-color:lavenderblush;">
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2" style="background-color:lavenderblush;">
         <div class="box">
           <img src="images\listings\Ford Focus TITANIUM 2016\1.png" alt="Ford Focus TITANIUM 2016">
           Ford Focus TITANIUM 2016
@@ -161,7 +167,7 @@
         </div>
       </div>
       <!-- Kia Sportage 2017 -->
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-1" style="background-color:lavender;">
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2" style="background-color:lavender;">
         <div class="box">
           <img src="images\listings\Kia Sportage 2017\1.png" alt="Kia Sportage 2017">
           Kia Sportage 2017
@@ -169,7 +175,7 @@
         </div>
       </div>
       <!-- BMW 325i 2008 -->
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-1" style="background-color:lavenderblush;">
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2" style="background-color:lavenderblush;">
         <div class="box">
           <img src="images\listings\BMW 325i 2008\1.png" alt="BMW 325i 2008">
           BMW 325i 2008
@@ -177,7 +183,7 @@
         </div>
       </div>
       <!-- See more Listings -->
-      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-1" style="background-color:lavender;">
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2" id="see-more-listings-grid-box" style="background-color:lavender;">
         <div class="box">
           See more listings
         </div>
@@ -185,9 +191,9 @@
     </div>
   </div>
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer-fluid">
     <div class="container">
-      <p class="text-muted text-center">UED</a>
+      <p class="text-muted text-center">CARSRUS</a>
       </p>
     </div>
   </footer>
