@@ -4,7 +4,7 @@
 <head>
   <!-- Application Metadata -->
   <meta charset="utf-8">
-  <title>Aston Martin V8 Vantage Coupe 2015</title>
+  <title>CARSRUS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="../images/layout/logo-black.png">
@@ -34,25 +34,28 @@
         </button>
         <!-- Branding Image -->
         <a class="navbar-brand" href="../index.html">
-        <span>
-          <img src="../images/layout/logo-white-20px.png" alt="CARSRUS"> CARSRUS
-        </span>
-      </a>
+          <span>
+            <img src="../images/layout/logo-white-20px.png" alt="CARSRUS">
+            CARSRUS
+          </span>
+        </a>
       </div>
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
           <li><a href="browse.html">Browse</a></li>
           <li><a href="sell.html">Sell</a></li>
           <!-- Search Bar -->
-          <li class="navbar-form navbar-left">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search">
-              <div class="input-group-btn">
-                <button class="btn btn-default" type="submit">
-                <i class="glyphicon glyphicon-search"></i>
-              </button>
+          <li>
+            <form class="navbar-form navbar-left">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                    <i class="glyphicon glyphicon-search"></i>
+                  </button>
+                </div>
               </div>
-            </div>
+            </form>
           </li>
         </ul>
         <!-- Sign up and Login Buttons -->
@@ -66,51 +69,42 @@
     </div>
   </nav>
   <!-- Application -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-11 col-sm-6 col-md-5 col-centered" style="background-color:lavenderblush;">
-          <a href="../index.html">
-            <img src="../images/layout/logo-black.png" class="img-center" alt="Logo">
-            <h1 style="text-align:center;">CARSRUS</h1>
-          </a>
-          <!-- Form -->
-          <form class="form-horizontal" action="#">
-            <!-- Email -->
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="email">Email:</label>
-              <div class="col-sm-10">
-                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-              </div>
-            </div>
-            <!-- Password -->
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="pwd">Password:</label>
-              <div class="col-sm-10">
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-              </div>
-            </div>
-            <!-- Remember Me CheckBox -->
-            <div class="form-group">
-              <div class="col-sm-offset-2 col-sm-10">
-                <div class="checkbox">
-                  <label><input type="checkbox" name="remember"> Remember me</label>
-                </div>
-              </div>
-            </div>
-            <!-- Register / Login Button -->
-            <div class="btn-group btn-group-justified">
-              <a href="#" class="btn btn-primary">Register</a>
-              <a href="#" class="btn btn-primary">Login</a>
-            </div>
-          </form>
-        </div>
+  <div class="container">
+    <h2>Account Options</h2>
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#buying">Buying</a></li>
+      <li><a data-toggle="tab" href="#selling">Selling</a></li>
+      <li><a data-toggle="tab" href="#more-options">More Options</a></li>
+    </ul>
+    <!-- Tabs -->
+    <div class="tab-content">
+      <!-- Buying Tab -->
+      <div id="buying" class="tab-pane fade in active">
+        <h3>Buying</h3>
+        <a href="#"><p>Watchlist</p></a>
+        <a href="#"><p>Items won</p></a>
+        <a href="#"><p>Items lost</p></a>
+      </div>
+      <!-- Selling Tab -->
+      <div id="selling" class="tab-pane fade">
+        <h3>Selling</h3>
+        <a href="#"><p>Sold items</p></a>
+        <a href="#"><p>Unsold items</p></a>
+      </div>
+      <!-- More Options -->
+      <div id="more-options" class="tab-pane fade">
+        <h3>More Options</h3>
+        <a href="#"><p>Change Payment Information</p></a>
+        <a href="#"><p>Change Delivery Address</p></a>
+        <a href="#"><p>Change Email Preferences</p></a>
+        <a href="#"><p>Blocked Traders</p></a>
       </div>
     </div>
+  </div>
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container-fluid">
+  <footer class="footer-fluid">
+    <div class="container">
       <p class="text-muted text-center">CARSRUS</p>
-      </p>
     </div>
   </footer>
 </body>

@@ -10,8 +10,10 @@
   <link rel="icon" type="image/png" href="../images/layout/logo-black.png">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- UED.css -->
+  <!-- layout.css -->
   <link rel="stylesheet" href="../css/layout.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Latest compiled JavaScript -->
@@ -40,7 +42,7 @@
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
           <li><a href="browse.html">Browse</a></li>
-          <li><a href="#">Sell</a></li>
+          <li><a href="sell.html">Sell</a></li>
           <!-- Search Bar -->
           <li class="navbar-form navbar-left">
             <div class="input-group">
@@ -55,8 +57,10 @@
         </ul>
         <!-- Sign up and Login Buttons -->
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Account</a></li>
-          <li><a href="sign-up-login.html">Sign Up / Login</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart</a></li>
+          <li><a href="#"><span class="fa fa-binoculars"></span> Watchlist</a></li>
+          <li><a href="my-account.html">Account</a></li>
+          <li><a href="sign-up-login.html">Register / Login</a></li>
         </ul>
       </div>
     </div>
@@ -141,7 +145,7 @@
     <p><h3>Seller Details</h3></p>
     <div class="row">
       <div class="col-xs-12" style="background-color:lavender;">
-        <p><b><a href="www.duncanandebbett.co.nz">Duncan and Ebbett Jaguar, Land Rover</a></b></p>
+        <p><b><a href="http://www.duncanandebbett.co.nz">Duncan and Ebbett Jaguar, Land Rover</a></b></p>
         <p>Tristram Street, Hamilton</p>
         <p>(07) 838 1211</p>
         <p><b>Adam Murphy - Jaguar &amp; Land Rover Sales Manager</b></p>
@@ -155,49 +159,61 @@
     <!-- BMW X1 S Drive 18i 2010 -->
     <div class="row is-flex">
       <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-3" style="background-color:lavenderblush;">
-        <div class="box">
-          <img src="../images/listings/BMW X1 S Drive 18i 2010/1.png" alt="BMW X1 S Drive 18i 2010">
-          BMW X1 S Drive 18i 2010
-          <p><b>$21,999</b></p>
-        </div>
+        <a href="#">
+          <div class="box">
+            <img src="../images/listings/BMW X1 S Drive 18i 2010/1.png" alt="BMW X1 S Drive 18i 2010">
+            BMW X1 S Drive 18i 2010
+            <p><b>$21,999</b></p>
+          </div>
+        </a>
       </div>
       <!-- Toyota Estima 2006 -->
       <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-3" style="background-color:lavender;">
-        <div class="box">
-          <img src="../images/listings/Toyota Estima 2006/1.png" alt="Toyota Estima 2006">
-          Toyota Estima 2006
-          <p><b>$11,955</b></p>
-        </div>
+        <a href="#">
+          <div class="box">
+            <img src="../images/listings/Toyota Estima 2006/1.png" alt="Toyota Estima 2006">
+            Toyota Estima 2006
+            <p><b>$11,955</b></p>
+          </div>
+        </a>
       </div>
       <!-- Ford Focus TITANIUM 2016 -->
       <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-3" style="background-color:lavenderblush;">
-        <div class="box">
-          <img src="../images/listings/Ford Focus TITANIUM 2016/1.png" alt="Ford Focus TITANIUM 2016">
-          Ford Focus TITANIUM 2016
-          <p><b>$33,980</b></p>
-        </div>
+        <a href="#">
+          <div class="box">
+            <img src="../images/listings/Ford Focus TITANIUM 2016/1.png" alt="Ford Focus TITANIUM 2016">
+            Ford Focus TITANIUM 2016
+            <p><b>$33,980</b></p>
+          </div>
+        </a>
       </div>
       <!-- Kia Sportage 2017 -->
       <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-3" style="background-color:lavender;">
-        <div class="box">
-          <img src="../images/listings/Kia Sportage 2017/1.png" alt="Kia Sportage 2017">
-          Kia Sportage 2017
-          <p><b>$39,990</b></p>
-        </div>
+        <a href="#">
+          <div class="box">
+            <img src="../images/listings/Kia Sportage 2017/1.png" alt="Kia Sportage 2017">
+            Kia Sportage 2017
+            <p><b>$39,990</b></p>
+          </div>
+        </a>
       </div>
       <!-- BMW 325i 2008 -->
       <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-3" style="background-color:lavenderblush;">
-        <div class="box">
-          <img src="../images/listings/BMW 325i 2008/1.png" alt="BMW 325i 2008">
-          BMW 325i 2008
-          <p><b>$11,990</b></p>
-        </div>
+        <a href="#">
+          <div class="box">
+            <img src="../images/listings/BMW 325i 2008/1.png" alt="BMW 325i 2008">
+            BMW 325i 2008
+            <p><b>$11,990</b></p>
+          </div>
+        </a>
       </div>
       <!-- See more Listings -->
       <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-3" id="see-more-listings-grid-box" style="background-color:lavender;">
-        <div class="box">
-          See more listings
-        </div>
+        <a href="#">
+          <div class="box">
+            See more listings
+          </div>
+        </a>
       </div>
     </div>
     <!-- Recommended Listings -->
@@ -205,49 +221,61 @@
     <div class="row is-flex">
       <!-- Nissan Primera 2001 -->
       <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-3" style="background-color:lavender;">
-        <div class="box">
-          <img src="../images/listings/Nissan Primera 2001/1.png" alt="Nissan Primera 2001">
-          Nissan Primera 2001
-          <p><b>$1,232</b></p>
-        </div>
+        <a href="#">
+          <div class="box">
+            <img src="../images/listings/Nissan Primera 2001/1.png" alt="Nissan Primera 2001">
+            Nissan Primera 2001
+            <p><b>$1,232</b></p>
+          </div>
+        </a>
       </div>
       <!-- Toyota Vellfire 2017 -->
       <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-3" style="background-color:lavenderblush;">
-        <div class="box">
-          <img src="../images/listings/Toyota Vellfire 2017/1.png" alt="Toyota Vellfire 2017">
-          Toyota Vellfire 2017
-          <p><b>$89,836</b></p>
-        </div>
+        <a href="#">
+          <div class="box">
+            <img src="../images/listings/Toyota Vellfire 2017/1.png" alt="Toyota Vellfire 2017">
+            Toyota Vellfire 2017
+            <p><b>$89,836</b></p>
+          </div>
+        </a>
       </div>
       <!-- Hyundai i20 PB 1.4 GL A4 Active 2013 -->
       <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-3" style="background-color:lavender;">
-        <div class="box">
-          <img src="../images/listings/Hyundai i20 PB 1.4 GL A4 Active 2013/1.png" alt="Hyundai i20 PB 1.4 GL A4 Active 2013">
-          Hyundai i20 PB 1.4 GL A4 Active 2013
-          <p><b>$14,750</b></p>
-        </div>
+        <a href="#">
+          <div class="box">
+            <img src="../images/listings/Hyundai i20 PB 1.4 GL A4 Active 2013/1.png" alt="Hyundai i20 PB 1.4 GL A4 Active 2013">
+            Hyundai i20 PB 1.4 GL A4 Active 2013
+            <p><b>$14,750</b></p>
+          </div>
+        </a>
       </div>
       <!-- Toyota Vanguard 2.4 AWD 2007 -->
       <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-3" style="background-color:lavenderblush;">
-        <div class="box">
-          <img src="../images/listings/Toyota Vanguard 2.4 AWD 2007/1.png" alt="Toyota Vanguard 2.4 AWD 2007">
-          Toyota Vanguard 2.4 AWD 2007
-          <p><b>$17,590</b></p>
-        </div>
+        <a href="#">
+          <div class="box">
+            <img src="../images/listings/Toyota Vanguard 2.4 AWD 2007/1.png" alt="Toyota Vanguard 2.4 AWD 2007">
+            Toyota Vanguard 2.4 AWD 2007
+            <p><b>$17,590</b></p>
+          </div>
+        </a>
       </div>
       <!-- Mitsubishi Chariot Grandis 2004 -->
       <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-3" style="background-color:lavender;">
-        <div class="box">
-          <img src="../images/listings/Mitsubishi Chariot Grandis 2004/1.png" alt="Mitsubishi Chariot Grandis 2004">
-          Mitsubishi Chariot Grandis 2004
-          <p><b>$7,450</b></p>
-        </div>
+        <a href="#">
+          <div class="box">
+            <img src="../images/listings/Mitsubishi Chariot Grandis 2004/1.png" alt="Mitsubishi Chariot Grandis 2004">
+            Mitsubishi Chariot Grandis 2004
+            <p><b>$7,450</b></p>
+          </div>
+        </a>
       </div>
       <!-- See more Listings -->
       <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-3" id="see-more-listings-grid-box" style="background-color:lavenderblush;">
-        <div class="box">
-          See more listings
-        </div>
+        <a href="#">
+          <div class="box">
+            See more listings
+          </div>
+        </a>
       </div>
     </div>
   </div>
