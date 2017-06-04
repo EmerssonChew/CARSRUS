@@ -21,7 +21,7 @@ body {
 }
 
 /*Navbar - Change where navbar breaks (Tablets)*/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 1199px) {
     .navbar-header {
         float: none;
     }
@@ -100,49 +100,32 @@ body {
   position: static;
 }
 
-/*Bootstrap - Image size follows grid size*/
+/*Bootstrap - Image size to follow grid size*/
 img {
     max-height: 100%;
     max-width: 100%;
 }
 
-/*See More Listings Grid Box Settings*/
-#see-more-listings-grid-box {
-  border-style: solid;
-  align-items: center;
-}
-
-/*Watchlist Button Settings*/
-#product-watchlist-button {
-  width: 100%;
-  height: 30px;
-  float: right;
-}
-
-/*Center Listing Image*/
-#product-listing-image {
-  align-items: center;
-}
-
-/*Justify Listing Description*/
-#product-listing-description {
+/*Justify Text*/
+.justify {
   text-align: justify;
 }
 
-.pagination {
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
+/*Center Text*/
+.center-text {
+  text-align: center;
 }
 
-.col-centered {
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
-}
-
+/*Center Image*/
 .img-center {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+/*Center items*/
+.center-col-pagination {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
 }
