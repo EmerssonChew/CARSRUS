@@ -67,7 +67,7 @@ body {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   /*Listing Tile - Change Font Size*/
   #product-listing-title {
     font-size: 2em;
@@ -77,7 +77,6 @@ body {
   #product-watchlist-button {
     margin-top: 15px;
   }
-}
 
 /*Search Bar - Too wide when collasped in the hanburger menu*/
 .navbar-form {
@@ -95,35 +94,30 @@ body {
   flex-direction: column;
 }
 
-.is-flex .box {
-  background: none;
-  position: static;
-}
-
-/*Bootstrap - Image size to follow grid size*/
+/*Image - Image size to follow grid size*/
 img {
     max-height: 100%;
     max-width: 100%;
 }
 
-/*Justify Text*/
+/*Text - Justify*/
 .justify {
   text-align: justify;
 }
 
-/*Center Text*/
+/*Text - Center*/
 .center-text {
   text-align: center;
 }
 
-/*Center Image*/
+/*Image - Center*/
 .img-center {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/*Center items*/
+/*Items - Center*/
 .center-col-pagination {
   margin-left: auto;
   margin-right: auto;
