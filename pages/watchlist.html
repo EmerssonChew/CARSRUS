@@ -87,7 +87,7 @@
                 <div class="form-group">
                   <label>Make:</label>
                   <select class="form-control">
-                  <option>Choose an option</option>
+                  <option>Any make</option>
                   <option>Honda</option>
                   <option>Nissan</option>
                   <option>BMW</option>
@@ -95,9 +95,9 @@
                 </div>
                 <!-- Model -->
                 <div class="form-group">
-                  <label>Make:</label>
+                  <label>Model:</label>
                   <select class="form-control">
-                    <option>Choose an option</option>
+                    <option>Any model</option>
                     <option>Accord</option>
                     <option>Civic</option>
                     <option>CRV</option>
@@ -106,30 +106,71 @@
                     <option>Odyssey</option>
                   </select>
                 </div>
+                <!-- Price Range -->
+                <div class="form-group">
+                  <label>Price Range:</label>
+                  <input type="text" class="form-control" placeholder="Any price">
+                  <p class="center-text">to</p>
+                  <input type="text" class="form-control" placeholder="Any price">
+                </div>
                 <!-- Year -->
                 <div class="form-group">
                   <label>Year:</label>
-                  <input type="text" class="form-control">
+                  <input type="text" class="form-control" placeholder="Any year">
+                  <p class="center-text">to</p>
+                  <input type="text" class="form-control" placeholder="Any year">
                 </div>
                 <!-- Distance -->
                 <div class="form-group">
                   <label>Distance:</label>
-                  <input type="text" class="form-control">
+                  <input type="text" class="form-control" placeholder="Any distance">
+                  <p class="center-text">to</p>
+                  <input type="text" class="form-control" placeholder="Any distance">
                 </div>
                 <!-- Colour -->
                 <div class="form-group">
                   <label>Colour:</label>
-                  <input type="text" class="form-control">
+                  <input type="text" class="form-control" placeholder="Any colour">
                 </div>
                 <!-- Transmission -->
                 <div class="form-group">
                   <label>Transmission:</label>
                   <select class="form-control">
-                    <option>Choose an option</option>
+                    <option>Any transmission</option>
                     <option>Manual</option>
                     <option>Automatic</option>
                     <option>Triptonic</option>
                   </select>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Sort Panel -->
+        <div class="panel-group">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <button id="sort" type="button" class="btn btn-primary btn-block" data-toggle="collapse" href="#sort-collapse">Sort</button>
+            </div>
+            <div id="sort-collapse" class="panel-collapse collapse">
+              <!-- Car Details Form -->
+              <form class="form-vertical">
+                <button type="button" class="btn btn-default btn-block">Featured</button>
+                <!-- Time Left -->
+                <div class="form-group">
+                  <label>Time Left:</label>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="form-group">
+                  <label>Price:</label>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                  </div>
                 </div>
               </form>
             </div>
