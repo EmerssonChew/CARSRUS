@@ -27,10 +27,10 @@
       <div class="navbar-header">
         <!-- Collasped Hamburger Menu -->
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
         <!-- Branding Image -->
         <a class="navbar-brand" href="../index.html">
@@ -46,7 +46,7 @@
           <li><a href="sell.html">Sell</a></li>
           <!-- Search Bar -->
           <li>
-            <form class="navbar-form navbar-left">
+            <form class="navbar-form navbar-left search-bar">
               <div class="input-group">
                 <input type="text" class="form-control" placeholder="Search">
                 <div class="input-group-btn">
@@ -63,24 +63,27 @@
           <li><a href="shopping-cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart</a></li>
           <li><a href="watchlist.html"><span class="fa fa-binoculars"></span> Watchlist</a></li>
           <li><a href="my-account.html">My Account</a></li>
-          <li><a href="sign-up-login.html">Register / Login</a></li>
+          <li><a href="register-login.html">Register / Login</a></li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- Application -->
-  <div class="container">
-    <!-- Watchlist -->
-    <h3>Watchlist</h3>
-    <div class="row">
-      <!-- Filters -->
-      <div class="col-xs-12 col-sm-4 col-md-3">
-        <div class="panel-group">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <button id="filter" type="button" class="btn btn-primary btn-block" data-toggle="collapse" href="#filter-collapse">Filters</button>
-            </div>
-            <div id="filter-collapse" class="panel-collapse collapse">
+  <div class="container fill">
+    <div class="container-fluid-white">
+      <!-- Watchlist -->
+      <h3>Watchlist</h3>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <!-- Filters -->
+          <button class="btn btn-default btn-block" data-toggle="collapse" data-target="#filter-collapse">
+            Filters
+            <span class="pull-right">
+              <span class="caret"></span>
+            </span>
+          </button>
+          <div id="filter-collapse" class="collapse">
+            <div class="well">
               <!-- Car Details Form -->
               <form class="form-vertical">
                 <!-- Make -->
@@ -88,9 +91,10 @@
                   <label>Make:</label>
                   <select class="form-control">
                   <option>Any make</option>
+                  <option>BMW</option>
                   <option>Honda</option>
                   <option>Nissan</option>
-                  <option>BMW</option>
+                  <option>Tesla</option>
                 </select>
                 </div>
                 <!-- Model -->
@@ -109,23 +113,35 @@
                 <!-- Price Range -->
                 <div class="form-group">
                   <label>Price Range:</label>
-                  <input type="text" class="form-control" placeholder="Any price">
-                  <p class="center-text">to</p>
-                  <input type="text" class="form-control" placeholder="Any price">
+                  <div class="input-group">
+                    <span class="input-group-addon white-background">$</span>
+                    <input type="text" class="form-control" placeholder="Any price">
+                  </div>
+                  <p class="text-center">to</p>
+                  <div class="input-group">
+                    <span class="input-group-addon white-background">$</span>
+                    <input type="text" class="form-control" placeholder="Any price">
+                  </div>
                 </div>
                 <!-- Year -->
                 <div class="form-group">
                   <label>Year:</label>
                   <input type="text" class="form-control" placeholder="Any year">
-                  <p class="center-text">to</p>
+                  <p class="text-center">to</p>
                   <input type="text" class="form-control" placeholder="Any year">
                 </div>
                 <!-- Distance -->
                 <div class="form-group">
                   <label>Distance:</label>
-                  <input type="text" class="form-control" placeholder="Any distance">
-                  <p class="center-text">to</p>
-                  <input type="text" class="form-control" placeholder="Any distance">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Any distance">
+                    <span class="input-group-addon white-background">km</span>
+                  </div>
+                  <p class="text-center">to</p>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Any distance">
+                    <span class="input-group-addon white-background">km</span>
+                  </div>
                 </div>
                 <!-- Colour -->
                 <div class="form-group">
@@ -145,17 +161,18 @@
               </form>
             </div>
           </div>
-        </div>
-        <!-- Sort Panel -->
-        <div class="panel-group">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <button id="sort" type="button" class="btn btn-primary btn-block" data-toggle="collapse" href="#sort-collapse">Sort</button>
-            </div>
-            <div id="sort-collapse" class="panel-collapse collapse">
+          <!-- Sort -->
+          <button class="btn btn-default btn-block btn-top-margin" data-toggle="collapse" data-target="#sort-collapse">
+            Sort
+            <span class="pull-right">
+              <span class="caret"></span>
+            </span>
+          </button>
+          <div id="sort-collapse" class="collapse">
+            <div class="well">
               <!-- Car Details Form -->
               <form class="form-vertical">
-                <button type="button" class="btn btn-default btn-block">Featured</button>
+                <button type="button" class="btn btn-default btn-block btn-bottom-margin">Featured</button>
                 <!-- Time Left -->
                 <div class="form-group">
                   <label>Time Left:</label>
@@ -175,140 +192,152 @@
               </form>
             </div>
           </div>
+          <!-- Submit Button -->
+          <button type="button" class="btn btn-primary btn-block btn-top-margin">Submit</button>
+        </div>
+        <!-- Listings -->
+        <div class="col-xs-12 col-sm-8 col-md-9 top-margin-space">
+          <div class="row is-flex">
+            <!-- Aston Martin V8 Vantage Coupe 2015 -->
+            <div class="col-xs-6 col-sm-12">
+              <a href="product.html">
+                <div class="well well-1">
+                  <div class="row">
+                    <!-- Listing Image -->
+                    <div class="col-xs-12 col-sm-6">
+                      <img src="../images/listings/Aston Martin V8 Vantage Coupe 2015/1.png" alt="Aston Martin V8 Vantage Coupe 2015">
+                    </div>
+                    <!-- Listing Summary -->
+                    <div class="col-xs-12 col-sm-6">
+                      <h4>Aston Martin V8 Vantage Coupe 2015</h4>
+                      <p><b>$159,990</b></p>
+                      <!-- Listing Details -->
+                      <div class="browse-listing-details">
+                        <p>Fuel Type: Petrol</p>
+                        <p>Fuel Economy: 2.5/6 Rating</p>
+                        <p>Transmission: Automatic</p>
+                        <p>Distance Travelled: 4980km</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Nissan Primera 2001 -->
+            <div class="col-xs-6 col-sm-12">
+              <a href="#">
+                <div class="well well-1">
+                  <div class="row">
+                    <!-- Listing Image -->
+                    <div class="col-xs-12 col-sm-6">
+                      <img src="../images/listings/Nissan Primera 2001/1.png" alt="Nissan Primera 2001">
+                    </div>
+                    <!-- Listing Summary -->
+                    <div class="col-xs-12 col-sm-6">
+                      <h4>Nissan Primera 2001</h4>
+                      <p><b>$1,232</b></p>
+                      <!-- Listing Details -->
+                      <div class="browse-listing-details">
+                        <p>Fuel Type: Petrol</p>
+                        <p>Fuel Economy: 4/6 Rating</p>
+                        <p>Transmission: Automatic</p>
+                        <p>Distance Travelled: 146,299km</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Toyota Vellfire 2017 -->
+            <div class="col-xs-6 col-sm-12">
+              <a href="#">
+                <div class="well well-1">
+                  <div class="row">
+                    <!-- Listing Image -->
+                    <div class="col-xs-12 col-sm-6">
+                      <img src="../images/listings/Toyota Vellfire 2017/1.png" alt="Toyota Vellfire 2017">
+                    </div>
+                    <!-- Listing Summary -->
+                    <div class="col-xs-12 col-sm-6">
+                      <h4>Toyota Vellfire 2017</h4>
+                      <p><b>$89,836</b></p>
+                      <!-- Listing Details -->
+                      <div class="browse-listing-details">
+                        <p>Fuel Type: Petrol</p>
+                        <p>Fuel Economy: Not yet rated</p>
+                        <p>Transmission: Triptonic</p>
+                        <p>Distance Travelled: Less than 1,000km</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Hyundai i20 PB 1.4 GL A4 Active 2013 -->
+            <div class="col-xs-6 col-sm-12">
+              <a href="#">
+                <div class="well well-1">
+                  <div class="row">
+                    <!-- Listing Image -->
+                    <div class="col-xs-12 col-sm-6">
+                      <img src="../images/listings/Hyundai i20 PB 1.4 GL A4 Active 2013/1.png" alt="Hyundai i20 PB 1.4 GL A4 Active 2013">
+                    </div>
+                    <!-- Listing Summary -->
+                    <div class="col-xs-12 col-sm-6">
+                      <h4>Hyundai i20 PB 1.4 GL A4 Active 2013</h4>
+                      <p><b>$14,750</b></p>
+                      <!-- Listing Details -->
+                      <div class="browse-listing-details">
+                        <p>Fuel Type: Petrol</p>
+                        <p>Fuel Economy: 5/6 Rating</p>
+                        <p>Transmission: Automatic</p>
+                        <p>Distance Travelled: 51,048km</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Toyota Vanguard 2.4 AWD 2007 -->
+            <div class="col-xs-6 col-sm-12">
+              <a href="#">
+                <div class="well well-1 well well-last">
+                  <div class="row">
+                    <!-- Listing Image -->
+                    <div class="col-xs-12 col-sm-6">
+                      <img src="../images/listings/Toyota Vanguard 2.4 AWD 2007/1.png" alt="Toyota Vanguard 2.4 AWD 2007">
+                    </div>
+                    <!-- Listing Summary -->
+                    <div class="col-xs-12 col-sm-6">
+                      <h4>Toyota Vanguard 2.4 AWD 2007</h4>
+                      <p><b>$17,590</b></p>
+                      <!-- Listing Details -->
+                      <div class="browse-listing-details">
+                        <p>Fuel Type: Petrol</p>
+                        <p>Fuel Economy: 4/6 Rating</p>
+                        <p>Transmission: Automatic</p>
+                        <p>Distance Travelled: 77,450km</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Listings -->
-      <div class="col-xs-12 col-sm-8 col-md-9">
-        <div class="row is-flex">
-          <!-- Aston Martin V8 Vantage Coupe 2015 -->
-          <div class="col-xs-6 col-sm-12 well">
-            <a href="product.html">
-              <div class="row">
-                <!-- Listing Image -->
-                <div class="col-xs-12 col-sm-6">
-                  <img src="../images/listings/Aston Martin V8 Vantage Coupe 2015/1.png" alt="Aston Martin V8 Vantage Coupe 2015">
-                </div>
-                <!-- Listing Summary -->
-                <div class="col-xs-12 col-sm-6">
-                  Aston Martin V8 Vantage Coupe 2015
-                  <p><b>$159,990</b></p>
-                  <!-- Listing Details -->
-                  <div class="browse-listing-details">
-                    <p>Fuel Type: Petrol</p>
-                    <p>Fuel Economy: 2.5/6 Rating</p>
-                    <p>Transmission: Automatic</p>
-                    <p>Distance Travelled: 4,980km</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- Nissan Primera 2001 -->
-          <div class="col-xs-6 col-sm-12 well">
-            <a href="#">
-              <div class="row">
-                <!-- Listing Image -->
-                <div class="col-xs-12 col-sm-6">
-                  <img src="../images/listings/Nissan Primera 2001/1.png" alt="Nissan Primera 2001">
-                </div>
-                <!-- Listing Summary -->
-                <div class="col-xs-12 col-sm-6">
-                  Nissan Primera 2001
-                  <p><b>$1,232</b></p>
-                  <!-- Listing Details -->
-                  <div class="browse-listing-details">
-                    <p>Fuel Type: Petrol</p>
-                    <p>Fuel Economy: 4/6 Rating</p>
-                    <p>Transmission: Automatic</p>
-                    <p>Distance Travelled: 146,299km</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- Toyota Vellfire 2017 -->
-          <div class="col-xs-6 col-sm-12 well">
-            <a href="#">
-              <div class="row">
-                <!-- Listing Image -->
-                <div class="col-xs-12 col-sm-6">
-                  <img src="../images/listings/Toyota Vellfire 2017/1.png" alt="Toyota Vellfire 2017">
-                </div>
-                <!-- Listing Summary -->
-                <div class="col-xs-12 col-sm-6">
-                  Toyota Vellfire 2017
-                  <p><b>$89,836</b></p>
-                  <!-- Listing Details -->
-                  <div class="browse-listing-details">
-                    <p>Fuel Type: Petrol</p>
-                    <p>Fuel Economy: Not yet rated</p>
-                    <p>Transmission: Triptonic</p>
-                    <p>Distance Travelled: Less than 1,000km</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- Hyundai i20 PB 1.4 GL A4 Active 2013 -->
-          <div class="col-xs-6 col-sm-12 well">
-            <a href="#">
-              <div class="row">
-                <!-- Listing Image -->
-                <div class="col-xs-12 col-sm-6">
-                  <img src="../images/listings/Hyundai i20 PB 1.4 GL A4 Active 2013/1.png" alt="Hyundai i20 PB 1.4 GL A4 Active 2013">
-                </div>
-                <!-- Listing Summary -->
-                <div class="col-xs-12 col-sm-6">
-                  Hyundai i20 PB 1.4 GL A4 Active 2013
-                  <p><b>$14,750</b></p>
-                  <!-- Listing Details -->
-                  <div class="browse-listing-details">
-                    <p>Fuel Type: Petrol</p>
-                    <p>Fuel Economy: 5/6 Rating</p>
-                    <p>Transmission: Automatic</p>
-                    <p>Distance Travelled: 51,048km</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- Toyota Vanguard 2.4 AWD 2007 -->
-          <div class="col-xs-6 col-sm-12 well">
-            <a href="#">
-              <div class="row">
-                <!-- Listing Image -->
-                <div class="col-xs-12 col-sm-6">
-                  <img src="../images/listings/Toyota Vanguard 2.4 AWD 2007/1.png" alt="Toyota Vanguard 2.4 AWD 2007">
-                </div>
-                <!-- Listing Summary -->
-                <div class="col-xs-12 col-sm-6">
-                  Toyota Vanguard 2.4 AWD 2007
-                  <p><b>$17,590</b></p>
-                  <!-- Listing Details -->
-                  <div class="browse-listing-details">
-                    <p>Fuel Type: Petrol</p>
-                    <p>Fuel Economy: 4/6 Rating</p>
-                    <p>Transmission: Automatic</p>
-                    <p>Distance Travelled: 77,450km</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
+      <!-- Pagination -->
+      <div class="text-center">
+        <ul class="pagination center-item-horizontally">
+          <li class="disabled"><a href="#">Previous</a></li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">Next</a></li>
+        </ul>
       </div>
-    </div>
-    <!-- Pagination -->
-    <div class="text-center">
-      <ul class="pagination center-col-pagination">
-        <li class="disabled"><a href="#">Previous</a></li>
-        <li class="active"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">Next</a></li>
-      </ul>
     </div>
   </div>
   <!-- Footer -->

@@ -4,7 +4,7 @@
 <head>
   <!-- Application Metadata -->
   <meta charset="utf-8">
-  <title>Aston Martin V8 Vantage Coupe 2015</title>
+  <title>CARSRUS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="../images/layout/logo-black.png">
@@ -27,10 +27,10 @@
       <div class="navbar-header">
         <!-- Collasped Hamburger Menu -->
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
         <!-- Branding Image -->
         <a class="navbar-brand" href="../index.html">
@@ -44,7 +44,7 @@
           <li><a href="browse.html">Browse</a></li>
           <li><a href="sell.html">Sell</a></li>
           <!-- Search Bar -->
-          <li class="navbar-form navbar-left">
+          <li class="navbar-form navbar-left search-bar">
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Search">
               <div class="input-group-btn">
@@ -60,54 +60,58 @@
           <li><a href="shopping-cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart</a></li>
           <li><a href="watchlist.html"><span class="fa fa-binoculars"></span> Watchlist</a></li>
           <li><a href="my-account.html">Account</a></li>
-          <li><a href="sign-up-login.html">Register / Login</a></li>
+          <li><a href="register-login.html">Register / Login</a></li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- Application -->
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-11 col-sm-6 col-md-5 well center-col-pagination">
-          <a href="../index.html">
-            <img src="../images/layout/logo-black.png" class="img-center" alt="Logo">
-            <h1 style="text-align:center;">CARSRUS</h1>
-          </a>
-          <!-- Form -->
-          <form class="form-horizontal">
-            <!-- Email -->
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="email">Email:</label>
-              <div class="col-sm-10">
-                <input type="email" class="form-control" placeholder="Enter email" name="email">
-              </div>
-            </div>
-            <!-- Password -->
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="pwd">Password:</label>
-              <div class="col-sm-10">
-                <input type="password" class="form-control" placeholder="Enter password" name="pwd">
-              </div>
-            </div>
-            <!-- Remember Me CheckBox -->
-            <div class="form-group">
-              <div class="col-sm-offset-2 col-sm-10">
-                <div class="checkbox">
-                  <label><input type="checkbox" name="remember"> Remember me</label>
+    <div class="container fill vertical-parent">
+      <div class="container-fluid-white">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-5 vertical-child">
+            <div class="well">
+              <a href="../index.html">
+                <img src="../images/layout/logo-black.png" class="center-img-horizontally" alt="Logo">
+                <h1 style="text-align:center;">CARSRUS</h1>
+              </a>
+              <!-- Form -->
+              <form class="form-horizontal">
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="email">Email:</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" placeholder="Enter email" name="email">
+                  </div>
                 </div>
-              </div>
+                <!-- Password -->
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="pwd">Password:</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" placeholder="Enter password" name="pwd">
+                  </div>
+                </div>
+                <!-- Remember Me CheckBox -->
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="remember"> Remember me</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- Register / Login Buttons -->
+                <div class="btn-group btn-group-justified">
+                  <a href="#" class="btn btn-primary">Register</a>
+                  <a href="#" class="btn btn-primary">Login</a>
+                </div>
+              </form>
             </div>
-            <!-- Register / Login Button -->
-            <div class="btn-group btn-group-justified">
-              <a href="#" class="btn btn-primary">Register</a>
-              <a href="#" class="btn btn-primary">Login</a>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer navbar-fixed-bottom">
     <div class="container-fluid">
       <p class="text-muted text-center">CARSRUS</p>
       </p>
