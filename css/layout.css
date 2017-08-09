@@ -164,7 +164,7 @@ img {
 }
 
 /*Well Styles*/
-.well {
+.well-same-height {
   height: 96%;
 }
 
@@ -174,10 +174,6 @@ img {
 
 .well-right {
   margin: 0 -15px 10px -10px;
-}
-
-.well-last {
-  margin-bottom: 0;
 }
 
 .well-2 {
