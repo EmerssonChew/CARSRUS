@@ -1,9 +1,15 @@
+/* Stop page from jumping */
+html {
+  overflow-y: scroll;
+}
+
 /*White body that spans the whole screen height*/
-html,body {
+html, body {
   height: 100%;
 }
 
 body {
+  min-height: 550px;
   padding-top: 50px;
   background-color: #EEEBE9;
 }
